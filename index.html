@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แฟ้มสะสมผลงาน | My Portfolio</title>
+    <style>
+        /* ตั้งค่าฟอนต์และสไตล์พื้นฐาน */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ส่วนหัว (Header / Navigation) */
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        /* ส่วนแนะนำตัว (Hero Section) */
+        .hero {
+            background: linear-gradient(135deg, #2c3e50, #1abc9c);
+            color: #fff;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        /* ส่วนเนื้อหาหลัก (Container) */
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #1abc9c;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* การจัดเลย์เอาต์ผลงาน (Grid) */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .project-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: #1abc9c;
+            margin-bottom: 0.5rem;
+        }
+
+        /* ส่วนท้าย (Footer) */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #2c3e50;
+            color: #fff;
+            margin-top: 4rem;
+        }
+
+        /* รองรับหน้าจอมือถือ */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            header { flex-direction: column; gap: 1rem; }
+            nav a { margin: 0 0.7rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">My Portfolio</div>
+        <nav>
+            <a href="#about">เกี่ยวกับฉัน</a>
+            <a href="#projects">ผลงาน</a>
+            <a href="#contact">ติดต่อ</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>ยินดีต้อนรับสู่แฟ้มสะสมผลงานของฉัน</h1>
+        <p>นักเรียนที่สนใจในด้านการพัฒนาเว็บไซต์และเทคโนโลยี</p>
+    </div>
+
+    <div class="container">
+        
+        <section id="about">
+            <h2>เกี่ยวกับฉัน (About Me)</h2>
+            <p>สวัสดีครับ/ค่ะ! ฉันชื่อ [ใส่ชื่อ-นามสกุลของคุณ] กำลังศึกษาอยู่ที่โรงเรียน [ใส่ชื่อโรงเรียนของคุณ] มีความสนใจและหลงใหลในเรื่อง [ใส่สิ่งที่ชอบ เช่น การเขียนโค้ด, งานกราฟิก, วิทยาศาสตร์] นอกจากการเรียนแล้ว ฉันยังชอบทำกิจกรรมและพัฒนาทักษะใหม่ๆ อยู่เสมอ</p>
+        </section>
+
+        <section id="projects">
+            <h2>ผลงานที่ภาคภูมิใจ (Projects)</h2>
+            <div class="project-grid">
+                
+                <div class="project-card">
+                    <h3>ชื่อผลงานชิ้นที่ 1</h3>
+                    <p>อธิบายสั้นๆ เกี่ยวกับผลงานชิ้นนี้ ทำเกี่ยวกับอะไร ได้ใช้วิชาหรือทักษะไหนในการทำบ้าง</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>ชื่อผลงานชิ้นที่ 2</h3>
+                    <p>อธิบายสั้นๆ เกี่ยวกับผลงานชิ้นนี้ ทำเกี่ยวกับอะไร ได้ใช้วิชาหรือทักษะไหนในการทำบ้าง</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>ชื่อผลงานชิ้นที่ 3</h3>
+                    <p>อธิบายสั้นๆ เกี่ยวกับผลงานชิ้นนี้ ทำเกี่ยวกับอะไร ได้ใช้วิชาหรือทักษะไหนในการทำบ้าง</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>ช่องทางการติดต่อ (Contact)</h2>
+            <p>หากต้องการติดต่อหรือดูผลงานเพิ่มเติม สามารถติดต่อได้ที่ช่องทางด้านล่างนี้เลยครับ/ค่ะ</p>
+            <br>
+            <p>📧 <b>อีเมล:</b> your.email@example.com</p>
+            <p>🌐 <b>GitHub:</b> github.com/yourusername</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 [ชื่อของคุณ]. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
